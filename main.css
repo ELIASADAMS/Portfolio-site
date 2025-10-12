@@ -1,0 +1,283 @@
+/* Dark Theme */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background: #1e1e2f;
+    color: #cfd7f8;
+    line-height: 1.6;
+}
+
+header {
+    background: #161626;
+    color: #0f1010;
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 2px solid #3d3d66;
+}
+
+header h1 {
+    margin: 0.5rem 0;
+    font-weight: 700;
+    font-size: 2.6rem;
+    color: #a1aaff;
+}
+
+header p {
+    margin: 0;
+    font-style: italic;
+    font-weight: 300;
+    color: #8288b8;
+}
+
+main {
+    padding: 2rem;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    color: #8899ff;
+    border-bottom: 2px solid #777acc;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+/* Skills Cards */
+.skills {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    background: #2a2a43;
+    box-shadow: 0 2px 8px rgba(137, 139, 255, 0.4);
+    border-radius: 10px;
+    flex: 1 1 160px;
+    max-width: 180px;
+    text-align: center;
+    padding: 1.3rem 0.7rem;
+    cursor: default;
+    user-select: none;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.skill:hover {
+    box-shadow: 0 6px 18px rgba(137, 139, 255, 0.75);
+    transform: translateY(-6px);
+}
+
+.skill-icon {
+    font-size: 4.2rem;
+    margin-bottom: 0.6rem;
+    color: #4a90e2;
+}
+
+.skill-name {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #c7cbf5;
+    margin-bottom: 0.6rem;
+}
+
+/* HTML and CSS styling */
+.html-icon {
+    color: #e44d26;
+}
+
+.css-icon {
+    color: #2965f1;
+}
+
+/* JS vis */
+.js-skill {
+    position: relative;
+    background: #f0db4f;
+    color: #323330;
+    font-weight: 800;
+    font-family: monospace, monospace;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.1rem 0.4rem;
+}
+
+.js-animation {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #222;
+    margin-top: 0.4rem;
+    font-family: monospace;
+    height: 22px;
+    overflow: hidden;
+    width: 150px;
+    border-radius: 4px;
+    background: #fffde0;
+    box-shadow: inset 0 0 5px #debc00;
+    padding: 2px 6px;
+    text-align: left;
+}
+
+/* React area with button */
+#skill-react {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    background: #61dafb;
+    color: #20232a;
+    font-weight: 700;
+    padding: 1rem 0.5rem;
+    border-radius: 10px;
+    max-width: 180px;
+}
+
+.toggle-button {
+    background-color: #20232a;
+    color: #61dafb;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 0.9rem;
+    user-select: none;
+    box-shadow: 0 0 8px #61dafbcc;
+    transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover,
+.toggle-button:focus {
+    background-color: #4a90e2;
+}
+
+/* Modal Window */
+#game-modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(30, 30, 47, 0.85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1000;
+}
+
+#game-modal.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#game-modal-content {
+    background-color: #1e1e2f;
+    border-radius: 14px;
+    padding: 20px;
+    max-width: 360px;
+    width: 100%;
+    box-shadow: 0 0 30px #61dafb88;
+    position: relative;
+    transform: translateY(-50px);
+    transition: transform 0.3s ease;
+}
+
+#game-modal.open #game-modal-content {
+    transform: translateY(0);
+}
+
+/* Close Button */
+#game-close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #61dafb;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Projects */
+.project {
+    background: #2a2a43;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 8px rgba(137, 139, 255, 0.3);
+}
+
+.project-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+    color: #b8bdff;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #a0a7d8;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: #61dafb;
+    font-weight: 700;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Contacts */
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.95rem;
+    color: #8288b8;
+    border-top: 1px solid #3d3d66;
+}
+
+a.contact-link {
+    color: #61dafb;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+a.contact-link:hover {
+    text-decoration: underline;
+}
+
+/* Styling "About" */
+.about-link {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 0.5rem;
+    background-color: #61dafb;
+    color: #20232a;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #61dafbcc;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+    cursor: pointer;
+}
+
+.about-link:hover,
+.about-link:focus {
+    background-color: #4a90e2;
+    color: #eaf6ff;
+    box-shadow: 0 0 20px #4a90e2cc;
+    outline: none;
+}

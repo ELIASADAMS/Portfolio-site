@@ -1,0 +1,172 @@
+/* fx.css */
+
+/* Анимация появления контента */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Свечение карточек навыков при наведении */
+.skill {
+    position: relative;
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.skill:hover {
+    box-shadow:
+        0 0 10px 2px #61dafb,
+        0 0 20px 4px #4a90e2;
+    transform: translateY(-10px) scale(1.05);
+    z-index: 2;
+}
+
+/* Анимация заголовков */
+h2 {
+    position: relative;
+    color: #8899ff;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #4a90e2, #61dafb);
+    border-radius: 2px;
+    animation: wave 2.5s infinite ease-in-out;
+}
+
+@keyframes wave {
+
+    0%,
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(15px);
+        opacity: 0.5;
+    }
+}
+
+/* Плавное появление кнопок */
+.about-link,
+.toggle-button,
+.project-link {
+    opacity: 0;
+    transform: translateY(5px);
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-name: buttonFadeIn;
+    animation-duration: 0.8s;
+    animation-delay: 0.3s;
+}
+
+.about-link {
+    animation-delay: 0.5s;
+}
+
+.project-link {
+    animation-delay: 0.6s;
+}
+
+@keyframes buttonFadeIn {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Эффект волнистого градиента для футера */
+footer {
+    background: linear-gradient(270deg, #1e1e2f, #262c47, #1e1e2f);
+    background-size: 600% 600%;
+    animation: gradientShift 12s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Пульсирующий эффект для заголовков */
+h1,
+h2 {
+    animation: pulseGlow 3s infinite ease-in-out;
+    text-shadow: 0 0 5px #61dafb, 0 0 15px #4a90e2;
+}
+
+@keyframes pulseGlow {
+
+    0%,
+    100% {
+        text-shadow: 0 0 5px #61dafb, 0 0 15px #4a90e2;
+    }
+
+    50% {
+        text-shadow: 0 0 15px #89aaff, 0 0 30px #4a90e2;
+    }
+}
+
+/* Эффект "летающих" частиц (фон) */
+.particle {
+    position: fixed;
+    background: #61dafb88;
+    border-radius: 50%;
+    opacity: 0.7;
+    pointer-events: none;
+    animation-timing-function: linear;
+}
+
+/* Кнопки с эффектом подсветки */
+button,
+.toggle-button,
+.about-link {
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s ease;
+}
+
+button::before,
+.toggle-button::before,
+.about-link::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(97, 218, 251, 0.5) 0%, transparent 80%);
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+button:hover::before,
+.toggle-button:hover::before,
+.about-link:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Обо мне — Ilya Minin (Eli)</title>
+    <link rel="stylesheet" href="about.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Илья Минин (Eli)</h1>
+        <button id="back-button" aria-label="Вернуться на главную">← Назад</button>
+    </header>
+
+    <main id="about-root"></main>
+
+    <footer>
+        &copy; 2025 Ilya Minin (Eli)
+    </footer>
+
+    <!-- Insert React -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script type="module" src="about.js"></script>
+
+    <script>
+        document.getElementById('back-button').addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+
+</html>
