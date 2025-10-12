@@ -23,47 +23,56 @@ header h1 {
 }
 
 #back-button {
-    padding: 0.3rem 0.7rem;
-    background-color: #61dafb;
-    border: none;
-    border-radius: 6px;
-    color: #20232a;
+    background: transparent;
+    border: 2px solid #8899ff;
+    border-radius: 8px;
+    color: #8899ff;
+    padding: 0.4rem 0.9rem;
     font-weight: 700;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    user-select: none;
+    box-shadow: 0 0 8px #8899ff88;
+    font-size: 1rem;
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
-#back-button:hover {
-    background-color: #4a90e2;
-}
+#back-button:hover,
+#back-button:focus {
+    background-color: #8899ff;
+    color: #161626;
+    outline: none;
+    box-shadow: 0 0 20px #a1aaffcc;
 
-main {
-    max-width: 720px;
-}
+    main {
+        max-width: 720px;
+    }
 
-h2 {
-    color: #8899ff;
-    margin-top: 1.5rem;
-    border-bottom: 2px solid #777acc;
-    padding-bottom: 0.2rem;
-}
+    h2 {
+        color: #8899ff;
+        margin-top: 1.5rem;
+        border-bottom: 2px solid #777acc;
+        padding-bottom: 0.2rem;
+    }
 
-ul {
-    margin-left: 1.3rem;
-}
+    ul {
+        margin-left: 1.3rem;
+    }
 
-a {
-    color: #61dafb;
-    text-decoration: none;
-}
+    a {
+        color: #61dafb;
+        text-decoration: none;
+    }
 
-a:hover {
-    text-decoration: underline;
-}
+    a:hover {
+        text-decoration: underline;
+    }
 
-footer {
-    margin-top: 3rem;
-    text-align: center;
-    color: #8288b8;
-    font-size: 0.9rem;
-}
+    footer {
+        margin-top: 3rem;
+        text-align: center;
+        color: #8288b8;
+        font-size: 0.9rem;
+    }

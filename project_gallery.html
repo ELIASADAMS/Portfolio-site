@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Галерея проектов – eli_lab</title>
+    <link rel="stylesheet" href="project_gallery.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Илья Минин (Eli) – Галерея</h1>
+        <button id="back-button" aria-label="Вернуться на главную">← Назад</button>
+    </header>
+
+    <main>
+        <section class="gallery" aria-label="Галерея проектов">
+            <article class="gallery-item" tabindex="0">
+                <img src="https://image-placeholder.com/images/actual-size/720x348.png" alt="Оптимизация AI-промптов"
+                    loading="lazy" />
+                <div class="overlay-corner">
+                    <h3>Оптимизация AI-промптов</h3>
+                    <p>Погружаюсь в методы улучшения генерации изображений с помощью ИИ.</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" tabindex="0">
+                <img src="https://image-placeholder.com/images/actual-size/720x348.png" alt="Модульные шаблоны HTML"
+                    loading="lazy" />
+                <div class="overlay-corner">
+                    <h3>Модульные шаблоны HTML</h3>
+                    <p>Создание адаптивных и переиспользуемых шаблонов сайтов.</p>
+                </div>
+            </article>
+
+            <article class="gallery-item" tabindex="0">
+                <img src="https://image-placeholder.com/images/actual-size/720x348.png" alt="Скрипты MIDI Logic Pro X"
+                    loading="lazy" />
+                <div class="overlay-corner">
+                    <h3>Скрипты MIDI Logic Pro X</h3>
+                    <p>Автоматизация оркестровых саундтреков с использованием скриптов.</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>© 2025 eli_lab</footer>
+
+    <div id="fullscreen-overlay" aria-modal="true" role="dialog" aria-label="Увеличенное изображение" hidden>
+        <button id="fullscreen-close-btn" aria-label="Закрыть увеличенное изображение">×</button>
+        <img src="" alt="" />
+    </div>
+
+    <script src="project_gallery.js"></script>
+</body>
+
+</html>
