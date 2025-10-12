@@ -1,6 +1,4 @@
-/* fx.css */
-
-/* Анимация появления контента */
+/* Content appear animation */
 .fade-in-section {
     opacity: 0;
     transform: translateY(20px);
@@ -13,7 +11,7 @@
     transform: none;
 }
 
-/* Свечение карточек навыков при наведении */
+/* Skill cards glow when hover */
 .skill {
     position: relative;
     transition: box-shadow 0.4s ease, transform 0.4s ease;
@@ -27,7 +25,7 @@
     z-index: 2;
 }
 
-/* Анимация заголовков */
+/* Header animation */
 h2 {
     position: relative;
     color: #8899ff;
@@ -59,7 +57,7 @@ h2::after {
     }
 }
 
-/* Плавное появление кнопок */
+/* Smooth buttons appear */
 .about-link,
 .toggle-button,
 .project-link {
@@ -87,7 +85,6 @@ h2::after {
     }
 }
 
-/* Эффект волнистого градиента для футера */
 footer {
     background: linear-gradient(270deg, #1e1e2f, #262c47, #1e1e2f);
     background-size: 600% 600%;
@@ -108,7 +105,7 @@ footer {
     }
 }
 
-/* Пульсирующий эффект для заголовков */
+/* Headings pulsating effect */
 h1,
 h2 {
     animation: pulseGlow 3s infinite ease-in-out;
@@ -127,7 +124,7 @@ h2 {
     }
 }
 
-/* Эффект "летающих" частиц (фон) */
+/* Flying particles (bg) */
 .particle {
     position: fixed;
     background: #61dafb88;
@@ -137,7 +134,7 @@ h2 {
     animation-timing-function: linear;
 }
 
-/* Кнопки с эффектом подсветки */
+/* Buttons with backlight */
 button,
 .toggle-button,
 .about-link {

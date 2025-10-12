@@ -1,18 +1,18 @@
-// react-component.js (ES Module)
+/* React game component */
 const e = React.createElement;
 const { useState, useEffect } = React;
 
 function CatchTheBall() {
-    const gridSize = 5; // 5x5 клеток
+    const gridSize = 5;
     const totalCells = gridSize * gridSize;
-    const gameDuration = 15; // секунд
+    const gameDuration = 15;
 
     const [timeLeft, setTimeLeft] = useState(gameDuration);
     const [score, setScore] = useState(0);
     const [ballPosition, setBallPosition] = useState(null);
     const [gameActive, setGameActive] = useState(false);
 
-    // Таймер обратного отсчёта
+    // Countdown
     useEffect(() => {
         if (!gameActive) return;
 
@@ -26,7 +26,7 @@ function CatchTheBall() {
         return () => clearTimeout(timer);
     }, [timeLeft, gameActive]);
 
-    // Меняем позицию шарика каждую секунду
+    // Change ball position
     useEffect(() => {
         let ballInterval;
         if (gameActive) {
@@ -53,7 +53,7 @@ function CatchTheBall() {
         }
     }
 
-    // Создаём игровое поле
+    // Create playfield
     const cells = [];
     for (let i = 0; i < totalCells; i++) {
         const isBall = i === ballPosition;
@@ -65,7 +65,7 @@ function CatchTheBall() {
                     width: '40px',
                     height: '40px',
                     margin: '4px',
-                    borderRadius: '8px',
+                    borderRadius: '88px',
                     backgroundColor: isBall ? '#61dafb' : '#2a2a43',
                     boxShadow: isBall ? '0 0 15px #61dafb99' : 'none',
                     cursor: 'pointer',

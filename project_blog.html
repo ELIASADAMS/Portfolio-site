@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Илья Минин (Eli) - Blog</title>
+    <link rel="stylesheet" href="project_blog.css" />
+</head>
+<body>
+    <header>
+        <h1>Илья Минин (Eli)</h1>
+        <button id="back-button" aria-label="Вернуться на главную">← Назад</button>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Добро пожаловать!</h2>
+            <p>Здесь делюсь своими проектами в CG, музыке и веб-разработке.</p>
+        </section>
+
+        <section class="posts">
+            <h2>Последние посты</h2>
+            <article class="post">
+                <img src="https://image-placeholder.com/images/actual-size/720x348.png" alt="AI Optimization" loading="lazy" />
+                <h3>Оптимизация AI-промптов</h3>
+                <p class="excerpt">Погружаюсь в методы улучшения генерации изображений с помощью ИИ.</p>
+                <button class="toggle-btn" aria-expanded="false" aria-controls="post1-details" aria-label="Развернуть пост">Подробнее ▼</button>
+                <div id="post1-details" class="post-details" hidden>
+                    <p>В этом посте детально рассмотрены техники и методологии для создания более эффективных и стабильных AI-промптов, включая структуру и ключевые параметры генерации.</p>
+                    <ul>
+                        <li>Структурированные промпты</li>
+                        <li>Избежание конфликтующих тегов</li>
+                        <li>Оптимизация для систем Kandinsky и Kling</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="post">
+                <img src="https://image-placeholder.com/images/actual-size/720x348.png" alt="Modular Templates" loading="lazy" />
+                <h3>Модульные HTML шаблоны</h3>
+                <p class="excerpt">Разработка адаптивных и переиспользуемых шаблонов сайтов.</p>
+                <button class="toggle-btn" aria-expanded="false" aria-controls="post2-details" aria-label="Развернуть пост">Подробнее ▼</button>
+                <div id="post2-details" class="post-details" hidden>
+                    <p>Создание шаблонов с использованием современных CSS Grid и Flexbox для адаптивности и лёгкой кастомизации, включая работу с медиа-запросами и анимациями.</p>
+                    <ul>
+                        <li>CSS Grid и Flexbox</li>
+                        <li>Мобильная адаптивность</li>
+                        <li>Анимации и эффекты</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="post">
+                <img src="https://image-placeholder.com/images/actual-size/720x348.png" alt="MIDI Scripting Logic Pro X" loading="lazy" />
+                <h3>Скрипты MIDI в Logic Pro X</h3>
+                <p class="excerpt">Автоматизация оркестровых саундтреков с использованием скриптов.</p>
+                <button class="toggle-btn" aria-expanded="false" aria-controls="post3-details" aria-label="Развернуть пост">Подробнее ▼</button>
+                <div id="post3-details" class="post-details" hidden>
+                    <p>Реализация сложных функций для управления MIDI-событиями и автоматизации в Logic Pro X с помощью пользовательских скриптов, включая отладку и оптимизацию.</p>
+                    <ul>
+                        <li>Автоматизация MIDI</li>
+                        <li>Отладка ошибок</li>
+                        <li>Оптимизация патчей</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+      2025 eli_lab
+  </footer>
+
+    <script src="project_blog.js"></script>
+</body

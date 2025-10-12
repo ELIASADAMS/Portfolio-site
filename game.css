@@ -1,22 +1,23 @@
-  /* React с рамкой */
+  /* React CSS frame */
   #skill-react {
-    background: #61dafb;
-    color: #20232a;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 700;
-    padding: 1rem 0.5rem;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 180px;
+      background: #61dafb;
+      color: #20232a;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: 700;
+      padding: 1rem 0.5rem;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 180px;
   }
+
   #react-root {
-    margin-top: 0.5rem;
-    width: 100%;
-    height: 60px;
-    background: white;
-    border-radius: 6px;
-    box-shadow: 0 0 15px #61dafb88;
-    overflow: hidden;
+      margin-top: 0.5rem;
+      width: 100%;
+      height: 60px;
+      background: white;
+      border-radius: 6px;
+      box-shadow: 0 0 15px #61dafb88;
+      overflow: hidden;
   }

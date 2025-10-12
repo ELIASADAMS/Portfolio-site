@@ -1,9 +1,9 @@
-// skills.js (ES Module)
+/* Skills */
 const skillHTML = document.querySelector('#skill-html .skill-demo');
 const skillCSS = document.querySelector('#skill-css .skill-demo');
 const skillJSAnim = document.querySelector('.js-skill-demo');
 
-// Минималистичная имитация подсветки HTML кода
+// HTML code highlight imitation
 function showHTMLDemo() {
     skillHTML.innerHTML = `
     &lt;<span style="color:#e44d26;">div</span>&gt;
@@ -12,7 +12,7 @@ function showHTMLDemo() {
   `;
 }
 
-// Минималистичная демонстрация CSS анимации
+// CSS animation
 function showCSSDemo() {
     skillCSS.innerHTML = '<div class="animated-box"></div>';
 }
@@ -20,7 +20,6 @@ function showCSSDemo() {
 showHTMLDemo();
 showCSSDemo();
 
-// Добавим CSS для анимации динамически
 const styleEl = document.createElement('style');
 styleEl.textContent = `
   .animated-box {
@@ -38,7 +37,6 @@ styleEl.textContent = `
 `;
 document.head.appendChild(styleEl);
 
-// JS навык: типинг анимация (код) как в старой версии
 const phrases = [
     'console.log("Hello World");',
     'let x = 5 + 3;',
