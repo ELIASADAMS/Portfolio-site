@@ -1,5 +1,5 @@
 document.getElementById('back-button').addEventListener('click', () => {
-  window.location.href = '../html/index.html';
+  window.location.href = '../index.html';
 });
 
 const toggleButtons = document.querySelectorAll('.toggle-btn');
