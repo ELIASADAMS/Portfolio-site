@@ -31,11 +31,11 @@ This is a personal portfolio website for Ilya Minin (Eli), showcasing skills, pr
 ## File Structure
 
 ```
-/index.html          - Main landing page
+/html/index.html          - Main landing page
 /about.html          - About me page with detailed info
-/main.css            - Core styles for the main site
-/game.css            - Styles specific to the game modal and component
-/fx.css              - Styles for UI animations and particle effects
+/css/main.css            - Core styles for the main site
+/css/game.css            - Styles specific to the game modal and component
+/css/fx.css              - Styles for UI animations and particle effects
 /skills.js           - JavaScript for skill animations and UI interactivity
 /react-component.js  - React component for the game
 /fx.js               - JavaScript for animated effects and particle system
@@ -48,7 +48,7 @@ This is a personal portfolio website for Ilya Minin (Eli), showcasing skills, pr
 ## How to Run
 
 1. Clone or download the repository.
-2. Open `index.html` in a modern web browser (Chrome, Firefox, Edge).
+2. Open `html/index.html` in a modern web browser (Chrome, Firefox, Edge).
 3. Navigate the main page and open the game via "Show Game" button in React skill card.
 4. View detailed personal info by clicking the "About Me" link.
 5. The site does not require any server and runs entirely client-side.
