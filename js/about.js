@@ -23,9 +23,9 @@ function AboutInfo() {
             'Создал несколько полноценных веб-проектов с использованием React и Node.js, включая адаптивный интерфейс и оптимизацию производительности.'
         ),
         e('h2', null, 'Примеры проектов из GitHub'),
-        e('h3', null, '1. Проект: Интерактивный UI компонент'),
+        e('h3', null, 'Проект: Интерактивный UI компонент'),
         e('ul', null,
-            e('li', null, 'Реализован на React с применением TypeScript'),
+            e('li', null, 'Реализован на JS'),
             e('li', null, 'Поддержка адаптивности и кроссбраузерности'),
             e('li', null, 'Использование современных хуков и контекстов для управления состоянием'),
             e('li', null,
@@ -33,16 +33,6 @@ function AboutInfo() {
                 e('a', { href: 'https://github.com/ELIASADAMS/interactive-ui-component', target: '_blank', rel: 'noopener' }, 'https://github.com/ELIASADAMS/interactive-ui-component')
             )
         ),
-        e('h3', null, '2. Проект: Веб-приложение для автоматизации задач'),
-        e('ul', null,
-            e('li', null, 'Backend на Node.js с Express'),
-            e('li', null, 'Frontend на чистом JavaScript с применением адаптивной верстки'),
-            e('li', null, 'Работа с REST API и базами данных'),
-            e('li', null,
-                'Ссылка на репозиторий: ',
-                e('a', { href: 'https://github.com/ELIASADAMS/task-automation-app', target: '_blank', rel: 'noopener' }, 'https://github.com/ELIASADAMS/task-automation-app')
-            )
-        )
     );
 }
 
