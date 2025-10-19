@@ -1,7 +1,6 @@
 .cards-container {
   display: flex;
   gap: 1rem;
-  /* increased gap for better spacing */
   justify-content: center;
   flex-wrap: wrap;
   align-items: stretch;
@@ -10,7 +9,6 @@
 
 .card-wrapper {
   width: 160px;
-  /* Let height be flexible to fill container but consistent across cards */
   display: flex;
   flex-direction: column;
   perspective: 900px;
@@ -18,7 +16,6 @@
 
 .card-inner {
   flex: 1;
-  /* fills card-wrapper height to keep equal heights */
   background: #222240;
   border-radius: 16px;
   box-shadow: 0 0 15px #61dafb77;
@@ -28,7 +25,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* titles/descriptions spaced nicely */
   align-items: center;
   color: #d0e1ff;
   font-weight: 600;
@@ -46,7 +42,6 @@
   margin-top: 0;
   margin-bottom: 1rem;
   min-height: 3em;
-  /* reserve vertical space for equal description height */
 }
 
 .card-wrapper:hover .card-inner {
@@ -129,9 +124,12 @@
 }
 
 @keyframes float {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
