@@ -5,7 +5,7 @@ const skillJSAnim = document.querySelector('.js-skill-demo');
 
 // HTML code highlight imitation
 function showHTMLDemo() {
-    skillHTML.innerHTML = `
+  skillHTML.innerHTML = `
     &lt;<span style="color:#e44d26;">div</span>&gt;
     &nbsp;&nbsp;&lt;<span style="color:#d35400;">h1</span>&gt;Hello&lt;/<span style="color:#d35400;">h1</span>&gt;
     &lt;/<span style="color:#e44d26;">div</span>&gt;
@@ -14,7 +14,7 @@ function showHTMLDemo() {
 
 // CSS animation
 function showCSSDemo() {
-    skillCSS.innerHTML = '<div class="animated-box"></div>';
+  skillCSS.innerHTML = '<div class="animated-box"></div>';
 }
 
 showHTMLDemo();
@@ -38,11 +38,11 @@ styleEl.textContent = `
 document.head.appendChild(styleEl);
 
 const phrases = [
-    'console.log("Hello World");',
-    'let x = 5 + 3;',
-    'function greet() { alert("Hi!"); }',
-    'document.querySelector("body").style.background = "#f0db4f";',
-    'for(let i=0; i<5; i++) { console.log(i); }'
+  'console.log("Hello World");',
+  'let x = 5 + 3;',
+  'function greet() { alert("Hi!"); }',
+  'document.querySelector("body").style.background = "#f0db4f";',
+  'for(let i=0; i<5; i++) { console.log(i); }'
 ];
 let index = 0;
 let charIndex = 0;
@@ -50,23 +50,23 @@ let currentPhrase = phrases[index];
 let isDeleting = false;
 
 function type() {
-    if (!isDeleting) {
-        skillJSAnim.textContent = currentPhrase.substring(0, charIndex + 1);
-        charIndex++;
-        if (charIndex === currentPhrase.length) {
-            isDeleting = true;
-            setTimeout(type, 1000);
-            return;
-        }
-    } else {
-        skillJSAnim.textContent = currentPhrase.substring(0, charIndex - 1);
-        charIndex--;
-        if (charIndex === 0) {
-            isDeleting = false;
-            index = (index + 1) % phrases.length;
-            currentPhrase = phrases[index];
-        }
+  if (!isDeleting) {
+    skillJSAnim.textContent = currentPhrase.substring(0, charIndex + 1);
+    charIndex++;
+    if (charIndex === currentPhrase.length) {
+      isDeleting = true;
+      setTimeout(type, 1000);
+      return;
     }
-    setTimeout(type, isDeleting ? 50 : 100);
+  } else {
+    skillJSAnim.textContent = currentPhrase.substring(0, charIndex - 1);
+    charIndex--;
+    if (charIndex === 0) {
+      isDeleting = false;
+      index = (index + 1) % phrases.length;
+      currentPhrase = phrases[index];
+    }
+  }
+  setTimeout(type, isDeleting ? 50 : 100);
 }
 type();
